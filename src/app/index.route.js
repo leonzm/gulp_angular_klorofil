@@ -27,6 +27,11 @@
         controller: 'NotificationsController',
         controllerAs: 'notifications'
       })
+      .when('/page-profile', {
+        templateUrl: 'app/page-profile/page-profile.html',
+        controller: 'PageProfileController',
+        controllerAs: 'pageProfile'
+      })
       .otherwise({
         redirectTo: '/'
       });

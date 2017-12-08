@@ -37,6 +37,11 @@
         controller: 'PageLoginController',
         controllerAs: 'pageLogin'
       })
+      .when('/page-lockscreen', {
+        templateUrl: 'app/page-lockscreen/page-lockscreen.html',
+        controller: 'PageLockscreenController',
+        controllerAs: 'pageLockscreen'
+      })
       .otherwise({
         redirectTo: '/'
       });

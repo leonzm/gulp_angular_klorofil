@@ -39,6 +39,34 @@
         }
       };
 
+      // 初始化侧边导航栏缩进
+      if ($rootScope.sidebarShow == null) {
+        $log.info('初始化侧边导航栏缩进');
+        $rootScope.sidebarShow = true;
+
+        $rootScope.showSidebar = function () {
+          $rootScope.sidebarShow = !$rootScope.sidebarShow;
+          // $log.info('化侧边导航栏是否显示：' + $rootScope.sidebarShow);
+
+          if(!angular.element('body').hasClass('layout-fullwidth')) {
+            angular.element('body').addClass('layout-fullwidth');
+
+          } else {
+            angular.element('body').removeClass('layout-fullwidth');
+            angular.element('body').removeClass('layout-default'); // also remove default behaviour if set
+          }
+
+          angular.element('#btnShowSidebar').find('.lnr').toggleClass('lnr-arrow-left-circle lnr-arrow-right-circle');
+
+          if(angular.element(window).innerWidth() < 1025) {
+            if(!angular.element('body').hasClass('offcanvas-active')) {
+              angular.element('body').addClass('offcanvas-active');
+            } else {
+              angular.element('body').removeClass('offcanvas-active');
+            }
+          }
+        }
+      }
     }
   }
 

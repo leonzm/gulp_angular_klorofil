@@ -12,6 +12,11 @@
         controller: 'IndexController',
         controllerAs: 'index'
       })
+      .when('/elements', {
+        templateUrl: 'app/elements/elements.html',
+        controller: 'ElementsController',
+        controllerAs: 'elements'
+      })
       .otherwise({
         redirectTo: '/'
       });

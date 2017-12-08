@@ -52,6 +52,11 @@
         controller: 'TypographyController',
         controllerAs: 'typography'
       })
+      .when('/icons', {
+        templateUrl: 'app/icons/icons.html',
+        controller: 'IconsController',
+        controllerAs: 'icons'
+      })
       .otherwise({
         redirectTo: '/'
       });

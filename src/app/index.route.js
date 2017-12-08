@@ -47,6 +47,11 @@
         controller: 'TablesController',
         controllerAs: 'tables'
       })
+      .when('/typography', {
+        templateUrl: 'app/typography/typography.html',
+        controller: 'TypographyController',
+        controllerAs: 'typography'
+      })
       .otherwise({
         redirectTo: '/'
       });

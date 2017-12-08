@@ -42,6 +42,11 @@
         controller: 'PageLockscreenController',
         controllerAs: 'pageLockscreen'
       })
+      .when('/tables', {
+        templateUrl: 'app/tables/tables.html',
+        controller: 'TablesController',
+        controllerAs: 'tables'
+      })
       .otherwise({
         redirectTo: '/'
       });

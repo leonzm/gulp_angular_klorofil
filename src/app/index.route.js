@@ -17,6 +17,11 @@
         controller: 'ElementsController',
         controllerAs: 'elements'
       })
+      .when('/panels', {
+        templateUrl: 'app/panels/panels.html',
+        controller: 'PanelsController',
+        controllerAs: 'panels'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -22,6 +22,11 @@
         controller: 'PanelsController',
         controllerAs: 'panels'
       })
+      .when('/notifications', {
+        templateUrl: 'app/notifications/notifications.html',
+        controller: 'NotificationsController',
+        controllerAs: 'notifications'
+      })
       .otherwise({
         redirectTo: '/'
       });

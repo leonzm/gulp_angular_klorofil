@@ -2,12 +2,12 @@
   <div class="sidebar-scroll">
     <nav>
       <ul class="nav">
-        <li><a href="#/index" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-        <li><a href="#/elements" class=""><i class="lnr lnr-code"></i> <span>Elements</span></a></li>
-        <li><a href="/#panels" class=""><i class="lnr lnr-cog"></i> <span>Panels</span></a></li>
-        <li><a href="/#notifications" class=""><i class="lnr lnr-alarm"></i> <span>Notifications</span></a></li>
+        <li><a href="#/index" class="{{sidebarMenuActive.index}}" ng-click="menuClick('index')"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
+        <li><a href="#/elements" class="{{sidebarMenuActive.elements}}" ng-click="menuClick('elements')"><i class="lnr lnr-code"></i> <span>Elements</span></a></li>
+        <li><a href="/#panels" class="{{sidebarMenuActive.panels}}" ng-click="menuClick('panels')"><i class="lnr lnr-cog"></i> <span>Panels</span></a></li>
+        <li><a href="/#notifications" class="{{sidebarMenuActive.notifications}}" ng-click="menuClick('notifications')"><i class="lnr lnr-alarm"></i> <span>Notifications</span></a></li>
         <li>
-          <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>Pages</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+          <a href="#subPages" data-toggle="collapse" class="{{sidebarMenuActive.subPages}}" ng-click="menuClick('subPages')"><i class="lnr lnr-file-empty"></i> <span>Pages</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
           <div id="subPages" class="collapse ">
             <ul class="nav">
               <li><a href="/#page-profile" class="">Profile</a></li>
@@ -16,9 +16,9 @@
             </ul>
           </div>
         </li>
-        <li><a href="/#tables" class=""><i class="lnr lnr-dice"></i> <span>Tables</span></a></li>
-        <li><a href="/#typography" class=""><i class="lnr lnr-text-format"></i> <span>Typography</span></a></li>
-        <li><a href="/#icons" class=""><i class="lnr lnr-linearicons"></i> <span>Icons</span></a></li>
+        <li><a href="/#tables" class="{{sidebarMenuActive.tables}}" ng-click="menuClick('tables')"><i class="lnr lnr-dice"></i> <span>Tables</span></a></li>
+        <li><a href="/#typography" class="{{sidebarMenuActive.typography}}" ng-click="menuClick('typography')"><i class="lnr lnr-text-format"></i> <span>Typography</span></a></li>
+        <li><a href="/#icons" class="{{sidebarMenuActive.icons}}" ng-click="menuClick('icons')"><i class="lnr lnr-linearicons"></i> <span>Icons</span></a></li>
       </ul>
     </nav>
   </div>

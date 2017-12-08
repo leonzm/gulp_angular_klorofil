@@ -32,6 +32,11 @@
         controller: 'PageProfileController',
         controllerAs: 'pageProfile'
       })
+      .when('/page-login', {
+        templateUrl: 'app/page-login/page-login.html',
+        controller: 'PageLoginController',
+        controllerAs: 'pageLogin'
+      })
       .otherwise({
         redirectTo: '/'
       });

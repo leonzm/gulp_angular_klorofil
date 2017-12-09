@@ -1,6 +1,6 @@
 # Gulp + AngularJs 示例
 
-## 模版
+## 参考
 1. [Klorofil](http://www.cssmoban.com/cssthemes/6700.shtml)
 2. [Gulp 使用手册](http://www.jianshu.com/p/ac03b3dac85b)
 3. [gulp-useref使用小结](https://love-yoyo.github.io/blog/2016/07/24/gulp-useref%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/)

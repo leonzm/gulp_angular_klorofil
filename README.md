@@ -34,3 +34,6 @@ angular.element('#btnShowSidebar').click();
 ### 注意
 1. 理论上```index.html```不需要添加第三方组件的依赖，会自动添加
 2. 有些不规范的第三方依赖，无法自动添加依赖到```index.html```，需要手动添加依赖，而且涉及到打包，必须让```useref()```找到并构建
+
+### 效果
+![jvm](https://github.com/leonzm/gulp_angular_klorofil/blob/master/document/klorofil_elements.png)
